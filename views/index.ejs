@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Back</title>
+    <style>
+        *,
+        html {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+        }
+
+        .center {
+            width: 100%;
+            height: 50%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 144px;
+        }
+
+        p {
+            font-size: 64px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Projet Back</h1>
+        <a href="/liste">Lister dossier</a>
+        <a href="/newFile">Nouveau Fichier</a>
+        <a href="/newDir">Nouveau Dossier</a>
+        <a href="/deleteFile">Supprimer Fichier</a>
+        <a href="/deleteDir">Supprimer Dossier</a>
+        <a href="/moveFile">Déplacer Fichier</a>
+        <a href="/moveDir">Déplacer Dossier</a>
+        <a href="/shell">Lancer commande</a>
+        <%= files %>
+    </div>
+</body>
+</html>
